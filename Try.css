@@ -1,0 +1,59 @@
+p{
+  border: 5px bold grey;
+  background-color: green;
+  text-align: center;
+}
+p:hover{
+animation: Hover 1s linear infinite;
+}
+@keyframes Hover {
+  0%{
+    background-color: green;
+    transform: scale(1.0);
+    height: 100%;
+  }
+  50%{
+    background-color: red;
+    transform: scale(1.5);
+    height: 100%;
+  }
+  100%{
+    background-color: green;
+    transform: scale(1.0);
+    height: 100%;
+  }
+
+}
+
+
+div.square{
+  width: 200px;
+  height: 200px;
+  object-position: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 5px groove yellow;
+  animation: Hover-off 1s forwards;
+}
+
+div.square:hover{
+  animation: Hover 1s forwards;
+}
+@keyframes Hover {
+  0%{
+    transform: scale(1.0);
+  }
+  100%{
+    transform: scale(1.5);
+  }
+}
+@keyframes Hover-off {
+  100%{
+    transform: scale(1.0);
+  }
+  0%{
+    transform: scale(1.5);
+  }
+}

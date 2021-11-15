@@ -1,0 +1,112 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+body{
+background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+img#Rowling{
+  height: 400px;
+  width: 400px;
+}
+img#Twain{
+  height: 400px;
+  width: 400px;
+}
+img#William{
+  height: 400px;
+  width: 400px;
+}
+table, td{
+  border: 3px solid yellow;
+  border-radius: 25px;
+  border-style: groove;
+  text-align: center;
+  margin: auto;
+  height: 400px;
+  width: 400px;
+  border-spacing: 10px;
+  font-size: 25px;
+}
+td{
+  background: #CCCCFF;
+  animation: Hover-off 1s forwards;
+}
+td:hover{
+  transform: scale(1.5);
+  background: #CC99FF;
+  animation: Hover 1s linear forwards
+}
+th{
+  border: 5px orange;
+  border-radius: 25px;
+  border-style: groove;
+  border-collapse: collapse;
+  height: 200px;
+  width: 400px;
+  animation: Hover-off 1s forwards 
+}
+th:hover{
+  transform: scale(1.5);
+  background: #CC99FF;
+  animation: Hover 1s linear forwards
+}
+p{
+  font-size: 50px;
+  font-weight: bolder;
+  color: #CCCCFF;
+  opacity: 85%;
+  text-align: center;
+  font-family: Papyrus,fantasy;
+}
+table, td, th{
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: bolder;
+  font-size: 24px;
+}
+@keyframes Hover {
+  0%{
+    transform: scale(1.0);
+    z-index: 10;
+  }
+  100%{
+    transform: scale(1.5);
+    z-index: 10;
+  }
+}
+@keyframes Hover-off {
+  100%{
+    transform: scale(1.0);
+    z-index: 10;
+  }
+  0%{
+    transform: scale(1.5);
+    z-index: 10;
+  }
+}
